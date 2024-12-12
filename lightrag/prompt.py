@@ -9,6 +9,7 @@ PROMPTS["DEFAULT_COMPLETION_DELIMITER"] = "<|COMPLETE|>"
 PROMPTS["process_tickers"] = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"]
 PROMPTS["DATASET_FEATURES"] = list()
 PROMPTS["TARGET_COLUMN"] = ""
+PROMPTS["TASK"] = ""
 # Updated default entity types relevant for biomedical datasets
 PROMPTS["DEFAULT_ENTITY_TYPES"] = [
     "clinical_feature",
@@ -140,7 +141,5 @@ Output:
 ("relationship"{tuple_delimiter}"Insulin Therapy"{tuple_delimiter}"Progression of Nephropathy"{tuple_delimiter}"Insulin therapy can prevent the progression of nephropathy."{tuple_delimiter}"treatment efficacy, disease management"{tuple_delimiter}8){record_delimiter}
 ("relationship"{tuple_delimiter}"HbA1c Levels"{tuple_delimiter}"Progression of Nephropathy"{tuple_delimiter}"Elevated HbA1c levels are associated with progression of nephropathy."{tuple_delimiter}"risk factor, disease progression"{tuple_delimiter}8){record_delimiter}
 ("content_keywords"{tuple_delimiter}"type 2 diabetes, HbA1c, nephropathy, insulin therapy, patient outcomes"){completion_delimiter}
-#############################""",
-]
 #############################""",
 ]
