@@ -143,3 +143,36 @@ Output:
 ("content_keywords"{tuple_delimiter}"type 2 diabetes, HbA1c, nephropathy, insulin therapy, patient outcomes"){completion_delimiter}
 #############################""",
 ]
+
+PROMPTS["keywords_extraction_examples"] = [
+    """Example 1:
+
+    Query: "What genetic factors contribute to the development of Alzheimer's disease?"
+    ################
+    Output:
+    {{
+      "high_level_keywords": ["Genetic Factors", "Alzheimer's Disease", "Neurodegenerative Disorders"],
+      "low_level_keywords": ["APOE ε4 Allele", "Gene Mutations", "Familial Alzheimer's", "Beta-Amyloid Plaques", "Tau Proteins"]
+    }}
+    #############################""",
+    """Example 2:
+
+    Query: "How do antimicrobial resistance mechanisms impact the effectiveness of antibiotics?"
+    ################
+    Output:
+    {{
+      "high_level_keywords": ["Antimicrobial Resistance", "Effectiveness of Antibiotics", "Microbial Genetics"],
+      "low_level_keywords": ["Resistance Genes", "Efflux Pumps", "Biofilms", "MRSA", "Enzymatic Degradation"]
+    }}
+    #############################""",
+    """Example 3:
+
+    Query: "What are the potential side effects of immunotherapy in cancer treatment?"
+    ################
+    Output:
+    {{
+      "high_level_keywords": ["Immunotherapy", "Cancer Treatment", "Adverse Effects"],
+      "low_level_keywords": ["Autoimmune Reactions", "Cytokine Release Syndrome", "Fatigue", "Dermatologic Toxicities", "Endocrinopathies"]
+    }}
+    #############################""",
+]
